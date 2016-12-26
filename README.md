@@ -1,11 +1,18 @@
 # AKLaunchWebVC H5启动页
----
-使用html5结合launchImage制作出动态的效果。由于html5的特性，容易维护并且开发动画效果十分便捷。
-<img src="./LaunchDemo.gif" width="60px;"/> 
+####初衷<br />
+让app启动的时候，先加载LaunchImage，随后展示动态h5启动效果，最后进入主程序
+
+####特点<br />
+1使用html5结合launchImage制作出动态的效果<br />
+2容易维护<br />
+3开发动画效果十分便捷<br />
+
+
+<img src="./LaunchDemo.gif" width="200px;"/> 
 
 
 
-####使用方式<br />
+####支持<br />
 系统支持：iOS7.0及以上
 
 熟悉html5的同学可以通过修改Guide.html，style.css达到目的效果，可通过浏览器测试动画
