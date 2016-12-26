@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="format-detection"content="telephone=no, email=no" />
+<title>LaunchH5</title>
+<link rel="stylesheet" type="text/css" href="guideCss/style.css">
+</head>
+<body class="bg">
+	<div class="content">
+		<div class="logo"></div>
+		<section class="bank"></section>
+		<div id ="ad" class="ad"></div>
+	</div>
+</body>
+<script type="text/javascript">
+    
+    var ad = document.querySelector('#ad');
+    
+    ad.addEventListener("click", function(){
+                        }, false);
+                        
+    //当ad动画结束时，启动页结束
+    ad.addEventListener("webkitAnimationEnd", function(){
+                        
+                        
+                                            //动画结束时事件
+                                            console.log('finish Launch');
+                                            window.location.href="finishLaunch";
+                                            }, false);
+                                            
+    </script>
+
+</html>

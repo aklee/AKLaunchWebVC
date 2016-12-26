@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="format-detection"content="telephone=no, email=no" />
+<title>LaunchH5</title>
+<link rel="stylesheet" type="text/css" href="guideCss/style.css">
+</head>
+<body class="bg_ipad">
+	<div class="content">
+		<section class="logo-bank">
+			<div class="logo-pad"></div>
+			<div class="bank-pad"></div>
+		</section>
+		<div id="ad-pad" class="ad-pad"></div>
+	</div>
+</body>
+<script type="text/javascript">
+    var tt = document.querySelector('#ad-pad');
+    tt.addEventListener("click", function(){
+                        this.className = 'change';
+                        }, false);
+                        tt.addEventListener("webkitAnimationEnd", function(){ //动画结束时事件
+                                            
+                                            console.log('finish Launch');
+                                            window.location.href="finishLaunch";
+                                            }, false);
+                                            
+     </script>
+</html>
