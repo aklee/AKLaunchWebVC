@@ -1,0 +1,530 @@
+/* Public */
+*body{background-color:#efeff5;margin:0;padding:0;width:100%;height:100%;font-size:14;color:#333333;}
+*button{text-align:center}
+*richtext{width:100%}
+*mapview{width:100%;height:100%}
+*webview{width:100%;height:100%}
+*text{width:100%;}
+/* Box Model */
+.fl{float:left}.fr{float:right}
+.al{align:left}.ar{align:right}.ac{align:center}
+.tal{text-align:left}.tar{text-align:right}.tac{text-align:center}
+.pa{position:absolute}.pr{position:relative}
+.vat{vertical-align:top}
+.vam{vertical-align:middle}
+.vab{vertical-align:bottom}
+.hide{visibility:hidden}
+/* Font */
+.fsi{font-style:italic}.fsb{font-style:bold}
+.fs1{font-size: 16;}
+.fs2{font-size: 18;}
+.c1{color: #ed3f3d;}/* 红色*/
+.c2{color: #0088cc;}/* 蓝色*/
+.c3{color: #4fb51c;}/* 成功*/
+.c4{color: #ff6600;}/* 警告*/
+.c5{color: #999999;}
+.c6{color: #cccccc;}
+.c7{color: #00a217;}/* 绿色*/
+.c8{color: #666666;}
+.c9{color: #888888;}
+
+/* H5引导页 */
+body,ul,li,section,article,span,em,div{margin: 0;padding: 0;}
+ol,ul{list-style:none outside none;}
+html{min-height: 100%;}
+body{background: #d74b4a url(../img/guide_bg.png) center bottom; width: 100%;min-height: 100%;background-size: cover;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+@-webkit-keyframes scene-fadeleft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-20px);
+	}
+}
+@keyframes scene-fadeleft {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+}
+@-webkit-keyframes scene-faderight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(20px);
+	}
+}
+@keyframes scene-faderight {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+}
+@-webkit-keyframes scene-fadeopacity {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes scene-fadeopacity {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes scene-fadetop {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+}
+@keyframes scene-fadetop {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+}
+@-webkit-keyframes scene-fadeleaf1 {
+	0% {
+		opacity: 0;
+		left: 50%;
+		top: 160px;
+	}
+	
+}
+@keyframes scene-fadeleaf1 {
+	0% {
+		opacity: 0;
+		left: 50%;
+		top: 160px;
+	}
+	
+}
+@-webkit-keyframes scene-fadeleaf2 {
+	0% {
+		opacity: 0;
+		left: 50%;
+		top: 160px;
+	}
+	
+}
+@keyframes scene-fadeleaf2 {
+	0% {
+		opacity: 0;
+		left: 50%;
+		top: 160px;
+	}
+	
+}
+@-webkit-keyframes scene-fadeleaf3 {
+	0% {
+		opacity: 0;
+		left: 50%;
+		top: 160px;
+	}
+	
+}
+@keyframes scene-fadeleaf3 {
+	0% {
+		opacity: 0;
+		left: 50%;
+		top: 160px;
+	}
+	
+}
+@-webkit-keyframes scene-fadeleaf4 {
+	0% {
+		opacity: 0;
+		right: 50%;
+		top: 160px;
+	}
+	
+}
+@keyframes scene-fadeleaf4 {
+	0% {
+		opacity: 0;
+		right: 50%;
+		top: 160px;
+	}
+
+}
+@-webkit-keyframes scene-fadeleaf5 {
+	0% {
+		opacity: 0;
+		right: 50%;
+		top: 160px;
+	}
+	
+}
+@keyframes scene-fadeleaf5 {
+	0% {
+		opacity: 0;
+		right: 50%;
+		top: 160px;
+	}
+	
+}
+@-webkit-keyframes scene-fadebtn {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}
+}
+@keyframes scene-fadebtn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+}
+.pa{position: absolute;}
+.guide-wrapper{
+	padding-bottom: 80px;
+	position: relative;
+	overflow: hidden;
+}
+.swipe-wrap{
+	position: relative;
+	overflow: hidden;
+}
+.swipe-wrap li{
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.guide-logo{
+    background: url(../img/guide-logo.png) no-repeat;
+    width: 180px;
+    height: 47px;
+    background-size: 180px;
+    height: 47px;
+    margin: 60px auto 0;
+}
+
+.guide-logo2{
+    background: url(../img/corgi.png) no-repeat;
+    width: 180px;
+    height: 180px;
+    background-size: 180px;
+    height: 180px;
+    margin: 60px auto 0;
+}
+
+.guide-logo3{
+    background: url(../img/logo.png) no-repeat;
+    width: 180px;
+    height: 180px;
+    background-size: 180px;
+    height: 180px;
+    margin: 60px auto 0;
+}
+.guide-content{
+	margin-top: 50px;
+	position: relative;
+	height: 310px;
+	overflow: hidden;
+	padding-top: 20px;
+}
+.guide .cloud60{
+	background: url(../img/cloud1.png) no-repeat;
+}
+.guide .cloud30{
+	background: url(../img/cloud2.png) no-repeat;
+}
+.guide .cloud25{
+	background: url(../img/cloud3.png) no-repeat;
+}
+.guide .cloud20{
+	background: url(../img/cloud4.png) no-repeat;
+}
+.guide .cloud50{
+	background: url(../img/cloud5.png) no-repeat;
+}
+.guide .cloud1{
+	width: 45px;
+	height: 27px;
+	background-size: 45px 27px;
+	left: 4px;
+	top: 4px;
+	-webkit-animation: scene-fadeleft 2s both;
+	animation: scene-fadeleft 2s both;
+}
+.guide .cloud2{
+	width: 19px;
+	height: 11px;
+	background-size: 19px 11px;
+	left: 47px;
+	top: 24px;
+	-webkit-animation: scene-fadeleft 2s both;
+	animation: scene-fadeleft 2s both;
+}
+.guide .cloud3{
+	width: 14px;
+	height: 8px;
+	background-size: 14px 8px;
+	left: 14px;
+	top: 70px;
+	-webkit-animation: scene-fadeleft 2s both;
+	animation: scene-fadeleft 2s both;
+}
+.guide .cloud4{
+	width: 33px;
+	height: 20px;
+	background-size: 33px 20px;
+	left: 5px;
+	top: 243px;
+	-webkit-animation: scene-fadeleft 2s both;
+	animation: scene-fadeleft 2s both;
+}
+.guide .cloud5{
+	width: 20px;
+	height: 12px;
+	background-size: 20px 12px;
+	left: 50%;
+	top: 281px;
+	margin-left: -30px;
+	-webkit-animation: scene-fadeleft 2s both;
+	animation: scene-fadeleft 2s both;
+}
+.guide .cloud6{
+	width: 20px;
+	height: 12px;
+	background-size: 20px 12px;
+	right: 75px;
+	top: 252px;
+	-webkit-animation: scene-faderight 2s both;
+	animation: scene-faderight 2s both;
+}
+.guide .cloud7{
+	width: 26px;
+	height: 16px;
+	background-size: 26px 16px;
+	right: -3px;
+	top: 295px;
+	-webkit-animation: scene-faderight 2s both;
+	animation: scene-faderight 2s both;
+}
+.guide .cloud8{
+	width: 40px;
+	height: 24px;
+	background-size: 40px 24px;
+	right: 16px;
+	top: 205px;
+	-webkit-animation: scene-faderight 2s both;
+	animation: scene-faderight 2s both;
+}
+.guide .cloud9{
+	width: 45px;
+	height: 27px;
+	background-size: 45px 27px;
+	right: -5px;
+	top: 26px;
+	-webkit-animation: scene-faderight 2s both;
+	animation: scene-faderight 2s both;
+}
+.guide .circler-wrapper{
+	background: #ca4140;
+	width: 238px;
+	height: 238px;
+	border-radius: 119px;
+	padding: 10px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-animation: scene-fadeopacity 2s both;
+	animation: scene-fadeopacity 2s both;
+	/*-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;*/
+}
+.guide .circle-black{
+	background: url(../img/circle.png);
+	width: 218px;
+	height: 218px;
+	background-size: 218px 218px;
+}
+.guide .pager1,.guide .pager4{
+	background: url(../img/pager1.png);
+	width: 130px;
+	height: 245px;
+	background-size: 130px 245px;
+	position: absolute;
+	left: 50%;
+	top: -17px;
+	margin-left: -65px;
+	z-index: 99;
+	-webkit-animation: scene-fadetop 1.5s both;
+	animation: scene-fadetop 1.5s both;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.guide .pager4{
+	background: url(../img/pager4.png);
+	background-size: 130px 245px;
+}
+.guide .pager2,.guide .pager5{
+	background: url(../img/pager2.png);
+	width: 105px;
+	height: 201px;
+	background-size: 105px 205px;
+	position: absolute;
+	/*left: 26px;*/
+	left: 50%;
+	margin-left: -52px;
+	/*bottom: 8px;*/
+	bottom: 30px;
+	-webkit-animation: scene-fadetop 1.5s both;
+	animation: scene-fadetop 1.5s both;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.guide .pager5{
+	background: url(../img/pager5.png);
+	background-size: 105px 205px;
+}
+.guide .page2-rotate{
+	left: 26px;
+	margin-left: 0;
+	bottom: 8px;
+	transform:rotate(-25deg);
+	-ms-transform:rotate(-25deg);
+	-moz-transform:rotate(-25deg);
+	-webkit-transform:rotate(-25deg);
+	-o-transform:rotate(-25deg);
+}
+.guide .pager3,.guide .pager6{
+	background: url(../img/pager3.png);
+	width: 108px;
+	height: 209px;
+	background-size: 108px 209px;
+	position: absolute;
+	/*right: 28px;*/
+	right: 50%;
+	margin-right: -52px;
+	/*bottom: 0px;*/
+	bottom: 30px;
+	-webkit-animation: scene-fadetop 1.5s both;
+	animation: scene-fadetop 1.5s both;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.guide .pager6{
+	background: url(../img/pager6.png);
+	background-size: 108px 209px;
+}
+.guide .page3-rotate{
+	right: 28px;
+	margin-right: 0;
+	bottom: 0;
+	transform:rotate(25deg);
+	-ms-transform:rotate(25deg);
+	-moz-transform:rotate(25deg);
+	-webkit-transform:rotate(25deg);
+	-o-transform:rotate(25deg);
+}
+.guide .leaf1{
+	background: url(../img/leaf1.png);
+	background-size: 13px 20px;
+	width: 13px;
+	height: 20px;
+	left: 75px;
+	top: 0px;
+	-webkit-animation: scene-fadeleaf1 1s both;
+	animation: scene-fadeleaf1 1s both;
+
+}
+.guide .leaf2{
+	background: url(../img/leaf2.png);
+	background-size: 16px 18px;
+	width: 16px;
+	height: 18px;
+	left: 30px;
+	top: 70px;
+	-webkit-animation: scene-fadeleaf2 1s both;
+	animation: scene-fadeleaf2 1s both;
+}
+.guide .leaf3{
+	background: url(../img/leaf3.png);
+	background-size: 30px 17px;
+	width: 30px;
+	height: 17px;
+	left: 30px;
+	top: 226px;
+	-webkit-animation: scene-fadeleaf3 1s both;
+	animation: scene-fadeleaf3 1s both;
+}
+.guide .leaf4{
+	background: url(../img/leaf4.png);
+	background-size: 30px 26px;
+	width: 30px;
+	height: 26px;
+	right: 13px;
+	top: 217px;
+	-webkit-animation: scene-fadeleaf4 1s both;
+	animation: scene-fadeleaf4 1s both;
+}
+.guide .leaf5{
+	background: url(../img/leaf5.png);
+	background-size: 18px 26px;
+	width: 18px;
+	height: 26px;
+	right: 24px;
+	top: 4px;
+	-webkit-animation: scene-fadeleaf5 1s both;
+	animation: scene-fadeleaf5 1s both;
+}
+.tryitnow{
+	width: 175px;
+	height: 40px;
+	display: block;
+	border: 1px solid #fcf4f4;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-size: 18px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+.guide .tryitnow{
+	-webkit-animation: scene-fadebtn 1s both;
+	animation: scene-fadebtn 1s both;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1s;
+}
+.page{
+	text-align: center;
+	margin-top: 20px;
+}
+.page em{
+	background: #e48686;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	margin:0 7px;
+	display: inline-block;
+}
+.page .on{
+	background: #ffffff;
+}
+
+
+

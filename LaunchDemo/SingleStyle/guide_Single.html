@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="format-detection"content="telephone=no, email=no" />
+<title>LaunchH5</title>
+<link rel="stylesheet" type="text/css" href="guideCss/style.css">
+</head>
+<body class="bg">
+	<div class="content">
+		<div class="logo"></div>
+		<section class="bank"></section>
+		<div id ="ad" class="ad"></div>
+	</div>
+</body>
+<script type="text/javascript">
+    
+    //ad的动画效果在style.css中定义，如下
+    /*
+     .ad,.ad-pad{
+     background: url(../guideImg/ad.png) no-repeat;
+     background-size: 199px 42px;
+     width: 199px;
+     height: 42px;
+     margin: 32px auto 0;
+     -webkit-animation: scene-fade2 3s both; //即3秒后动画结束， 结束引导页
+     animation: scene-fade2 3s both;
+     -webkit-animation-delay: 2s;
+     animation-delay: 2s;
+     */
+    var ad = document.querySelector('#ad');
+    
+    ad.addEventListener("click", function(){
+                        }, false);
+                        
+    //当id="ad"这个元素动画结束时，启动页结束
+    ad.addEventListener("webkitAnimationEnd", function(){
+                        
+                        
+                                            //动画结束时事件
+                                            console.log('finish Launch');
+                                            window.location.href="finishLaunch";
+                                            }, false);
+                                            
+    </script>
+
+</html>

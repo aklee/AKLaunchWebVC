@@ -9,22 +9,39 @@
 #import "AKLaunchWebVC.h"
 #import "AppDelegate.h"
 @interface AKLaunchWebVC ()<UIWebViewDelegate>
-    @property(nonatomic,strong)UIWebView* webView;
-    @end
+@property(nonatomic,strong)UIWebView* webView;
+@end
 
 @implementation AKLaunchWebVC
-    
+
+-(instancetype)initWithLaunchImage:(UIImage*)launchImage launchH5URL:(NSURL*)launchURL{
+    self= [super init];
+    self.currentLaunchImage=launchImage;
+    self.launchURL=launchURL;
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
+    //WebView
     UIWebView* webV=[[UIWebView alloc]initWithFrame:self.view.bounds];
+    
     webV.delegate=self;
+    
+    webV.scrollView.showsVerticalScrollIndicator=NO;
+    
+    webV.scrollView.showsHorizontalScrollIndicator=NO;
+    
     self.webView=webV;
     
+    
     if (!self.currentLaunchImage) {
+        
         self.currentLaunchImage=[UIImage imageNamed:@"LaunchImage"];
     }
+    
+    NSAssert(self.currentLaunchImage!=nil,@"请指定启动图片，避免过度UI卡顿");
     
     UIImageView* bg= [[UIImageView alloc]initWithImage:self.currentLaunchImage];
    
@@ -32,14 +49,8 @@
   
     [self.view addSubview:bg];
     
+    NSAssert(self.launchURL!=nil,@"请指定启动H5地址！");
     
-    if (!self.launchURL) {
-        
-        NSString* file= [[NSBundle mainBundle] pathForResource:@"guide.html" ofType:nil];
-     
-        self.launchURL=[NSURL fileURLWithPath:file];
-        
-    }
     
     NSURLRequest* req = [NSURLRequest requestWithURL:self.launchURL];
     

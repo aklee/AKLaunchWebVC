@@ -21,11 +21,10 @@
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
 
     
-    AKLaunchWebVC* vc= [AKLaunchWebVC new];
+    AKLaunchWebVC* vc= [[AKLaunchWebVC alloc]
+                        initWithLaunchImage:[UIImage imageNamed:@"LaunchImage"]
+                        launchH5URL:[[NSBundle mainBundle]URLForResource:@"guide_Single.html" withExtension:nil]];
     
-    //设置当前app启动页
-    vc.currentLaunchImage=[UIImage imageNamed:@"LaunchImage"];
-    //h5启动完毕回调
     vc.launchFinish=^(){
         //进入主界面
         [self finishLaunch];

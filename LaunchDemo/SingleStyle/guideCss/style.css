@@ -1,0 +1,137 @@
+body,ul,li,section,article,span,em,div{margin: 0;padding: 0;}
+ol,ul{list-style:none outside none;}
+html{min-height: 100%;}
+body{background: #fafafa; width: 100%;min-height: 100%;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.bg{
+	background: url(../guideImg/house.png) no-repeat center bottom;
+	background-size: 100% 100%;
+}
+.bg_ipad{
+	background: url(../guideImg/house.png) no-repeat center bottom;
+	background-size: contain;
+}
+@-webkit-keyframes scene-fade1 {
+	24% {
+		opacity: 0.24;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes scene-fade1 {
+	24% {
+		opacity: 0.24;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes scene-fade2 {
+	0% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0.24;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes scene-fade2 {
+	0% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0.04;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.logo,.logo-pad{
+	background: url(../guideImg/logo.png) no-repeat;
+	background-size: 94px 94px;
+	width: 94px;
+	height: 94px;
+	margin: 70px auto 0;
+	opacity: 0.54;
+	-webkit-animation: scene-fade1 2s both;
+	animation: scene-fade1 2s both;
+}
+@media screen and (min-width:375px){
+	.logo{margin: 100px auto 0;}
+}
+.logo-pad{
+	background-size: 115px 115px;
+	width: 115px;
+	height: 115px;
+	float: left;
+	margin: 0;
+}
+.bank,.bank-pad{
+	background: url(../guideImg/name.png) no-repeat;
+	background-size: 142px 142px;
+	width: 142px;
+	height: 142px;
+	margin: 23px auto 0;
+	-webkit-animation: scene-fade2 2s both;
+	animation: scene-fade2 2s both;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.bank-pad{
+	background-size: 314px 103px;
+	width: 314px;
+	height: 103px;
+	margin: 0 0 0 26px;
+	float: left;
+}
+.ad,.ad-pad{
+	background: url(../guideImg/ad.png) no-repeat;
+	background-size: 199px 42px;
+	width: 199px;
+	height: 42px;
+	margin: 32px auto 0;
+	-webkit-animation: scene-fade2 3s both;
+	animation: scene-fade2 3s both;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.ad-pad{
+	background: url(../guideImg/ipad_ad.png) no-repeat;
+	background-size: 359px 78px;
+	width: 359px;
+	height: 78px;
+	margin: 50px auto 0;
+}
+.logo-bank{
+	width: 459px;
+	height: 115px;
+	margin: 208px auto 0;
+}

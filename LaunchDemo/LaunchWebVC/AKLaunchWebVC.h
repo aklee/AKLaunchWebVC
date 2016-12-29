@@ -13,8 +13,10 @@
 //default:guide.html 默认本地guide.html
 @property(nonatomic,copy)NSURL* launchURL;
 
-//app当前的启动图
+//app当前的启动图  默认nil
 @property(nonatomic,copy)UIImage* currentLaunchImage;
     
 @property(nonatomic,copy)void(^launchFinish)(void);
+
+-(instancetype)initWithLaunchImage:(UIImage*)launchImage launchH5URL:(NSURL*)launchURL;
 @end
